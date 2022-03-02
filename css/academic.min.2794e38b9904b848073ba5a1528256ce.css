@@ -66,7 +66,7 @@ section {
     width: max-content;
     position: absolute;
     top: 80%;
-    background-color: white;
+    background-color: rgba(216, 215, 215, 0.755);
     border-radius: 0.8rem;
     z-index: 2; 
     transition: all ease-in-out 300ms;
@@ -96,6 +96,10 @@ section {
 
   .dropdown-link:hover .dropdown-content {
       display: block;
+  }
+
+  .dropdown-content li:hover{
+    font-weight: bold;
   }
 
 
