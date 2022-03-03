@@ -253,6 +253,11 @@ button {
   border-radius: 0;
 }
 
+.navbar-dark{
+  background-color: #272935;
+  opacity: 1;
+}
+
 .navbar-dark .navbar-brand {
   color: #fff;
 }
