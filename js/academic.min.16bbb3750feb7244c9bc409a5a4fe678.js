@@ -3652,17 +3652,20 @@ window.addEventListener("scroll", () => {
         const codeHlDark = $('link[title=hl-dark]')[0]
         const diagramEnabled = $('script[title=mermaid]').length > 0
         if (dark_mode) {
-            $('body').addClass('dark')
+            $('body').addClass('dark');
+            // $('.navbar').removeClass('navbar-light').addClass('navbar-dark');
             if (codeHlEnabled) {
                 codeHlLight.disabled = true
                 codeHlDark.disabled = false
             }
+            
             if (diagramEnabled) {
                 mermaid.initialize({ theme: 'dark' })
             }
             $('.js-dark-toggle i').removeClass('fa-moon').addClass('fa-sun')
         } else {
-            $('body').removeClass('dark')
+            $('body').removeClass('dark');
+            // $('.navbar').removeClass('navbar-dark').addClass('navbar-light');
             if (codeHlEnabled) {
                 codeHlLight.disabled = false
                 codeHlDark.disabled = true
@@ -3938,3 +3941,17 @@ if (typeof Fuse === 'function') {
         })
     })
 }
+
+
+// Navbar Toggle
+$('.js-dark-toggle').click(
+    (e) => {
+        if($('.js-dark-toggle > i').hasClass('fa-moon')){
+           $('#navbar-main').addClass('navbar-dark').removeClass('navbar-light')
+           console.log("DARK");
+        } else {
+            $('#navbar-main').addClass('navbar-light').removeClass('navbar-dark')
+            console.log("LIGHT");
+        }
+    }
+);
