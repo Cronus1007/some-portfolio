@@ -59,6 +59,12 @@ section {
   display: block;
 }
 
+span[itemprop="name"] {
+  color: var(--primary);
+}
+
+
+
 .dropdown-content {
   display: none;
   width: max-content;
@@ -10454,6 +10460,9 @@ body.dark,
 .dark h5,
 .dark h6 {
   color: #98a6ad;
+}
+h3:hover {
+  color: var(--primary);
 }
 .dark pre,
 .dark code {
