@@ -59,7 +59,7 @@ section {
   display: block;
 }
 
-span[itemprop="name"] {
+#publications span[itemprop="name"] {
   color: var(--primary);
 }
 
