@@ -874,6 +874,61 @@ pre code {
 .offset-11 {
   margin-left: 91.66666667%;
 }
+
+.contact__ContactForm{
+  display: flex;
+  width: auto;
+}
+
+.contact__ContactForm form{
+  width: 100%;
+}
+.contact__ContactForm input,
+.contact__ContactForm textarea{
+  margin-top: 10px !important;
+}
+
+.contact__ContactForm__text{
+  width: 100%;
+  height: 40px;
+  flex: 50%;
+  color: #33b38d;
+  border: 1px solid #bcbcbc;
+  border-radius: 50px;
+  outline: none;
+  padding: 15px;
+}
+
+.contact__ContactForm__textarea{
+  width: 100%;
+  height: 150px;
+  flex: 50%;
+  color: #33b38d;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  outline: none;
+  padding: 15px;
+  background-color: transparent;
+}
+
+contact__ContactForm__text::placeholder,
+contact__ContactForm__textarea::placeholder{
+  color: #aaa;
+}
+
+.contact__ContactForm .contact__ContactForm__submit{
+  width: 10em;
+  margin: auto;
+  border: none;
+  border-radius: 50px;
+  background-color: #33b38d;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+
 @media (min-width: 576px) {
   .col-sm {
     flex-basis: 0;
